@@ -8,7 +8,7 @@ import (
 )
 
 func main() {
-	url:="https://movie.douban.com/top250?start=0&filter="
+	url:="https://movie.douban.com/top250"
 	e:=engine.ConcurrentEngine{
 		Scheduler: &scheduler.QueueScheduler{},
 		WorkerCount:10,
